@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RocketShoes</title>
+
+    <!-- ----------CSS and Favicon----------- -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+
+    <!-- ----------Fonts----------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html"><img src="assets/logo.svg" alt="logo"></a>
+            <ul>
+                <li><a href="">Masculino</a></li>
+                <li><a href="">Feminino</a></li>
+                <li><a href="">Infantil</a></li>
+                <li><a href="">Customizar</a></li>
+            </ul>
+    
+            <div class="search-container">
+                <img src="assets/icon-search.svg" alt="search-icon">
+                <input type="text" placeholder="pesquisar">
+            </div>
+    
+        </nav>
+    </header>
+    
+<main>
+
+    <div class="main-container">
+        <section class="about">
+            <h1>
+                Tênis Esportivo <br>
+                Para Corrida <br>
+                Confortável
+            </h1>
+            <p>
+                Esse tênis tem o intuito de te deixar ainda mais fitness, focado e estiloso.
+            </p>
+            <h2>
+                R$ 1.000,00
+            </h2>
+            <button>
+                Comprar agora
+            </button>
+        </section>
+    
+    
+        <section class="product">
+            <img src="assets/tenis-1-ampliado.png" alt="main_shoe_image" class="main-img">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/tenis-1-galeria.png"></div>
+                    <div class="swiper-slide"><img src="assets/tenis-2-galeria.png"></div>
+                    <div class="swiper-slide"><img src="assets/tenis-3-galeria.png"></div>
+                    <div class="swiper-slide"><img src="assets/tenis-1-galeria.png"></div>
+                    <div class="swiper-slide"><img src="assets/tenis-2-galeria.png"></div>
+                    <div class="swiper-slide"><img src="assets/tenis-3-galeria.png"></div>   
+                </div>
+                <div class="swiper-pagination"></div>
+        </section>
+    </div>
+
+
+
+</main>
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script> 
+
+</body>
+</html>
